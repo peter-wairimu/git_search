@@ -1,6 +1,5 @@
-.container{
+.form{
     display: flex;
-    justify-content: flex-start;
     position: fixed;
     align-items: center;
     top: 0;
@@ -24,7 +23,7 @@
     box-shadow: .5rem .5rem .8rem .8rem rgb(113, 177, 17);
 }
 .input{
-    height: 1.2rem;
+    height: 1.8rem;
     padding:  .1rem;
     border-radius: .3rem;
     color: rgb(37, 146, 37);
@@ -43,7 +42,7 @@
     
 }
 .btn:hover{
-    color: rgb(238, 47, 238);
+    color: rgb(92, 13, 92);
     border: 2px solid rgb(214, 168, 108);
     background-color: rgb(70, 190, 70);
 }
