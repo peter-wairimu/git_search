@@ -17,6 +17,7 @@
     background-color: rgb(226, 221, 221);
     border-radius: .6rem;
     box-shadow: 3px 2.4px 3px 3px rgb(77, 201, 159);
+    cursor: pointer;
 
 }
 .logo img:hover{
