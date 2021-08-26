@@ -13,11 +13,13 @@ import {MatSelectModule} from '@angular/material/select';
 import { SearchBarComponent } from './components/search-bar/search-bar.component'
 import {FlexLayoutModule} from '@angular/flex-layout'
 import {MatCardModule} from '@angular/material/card'
-import {MatButtonModule} from '@angular/material/button'
+import {MatButtonModule} from '@angular/material/button';
+import { GithubComponent } from './components/github/github.component'
 @NgModule({
   declarations: [
     AppComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    GithubComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,10 @@ import {MatButtonModule} from '@angular/material/button'
     MatTabsModule,
     MatIconModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    FlexLayoutModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
