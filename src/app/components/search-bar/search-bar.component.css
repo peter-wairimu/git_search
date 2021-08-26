@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 0;
+
+}
+.logo{
+    color: aliceblue;
+    padding: 1.5rem;
+    
+     
+}
+.logo img{
+    height: 4rem;
+    background-color: rgb(226, 221, 221);
+    border-radius: .6rem;
+    box-shadow: 3px 2.4px 3px 4px rgb(77, 201, 159);
+
+}
