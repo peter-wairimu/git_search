@@ -15,6 +15,8 @@ import {FlexLayoutModule} from '@angular/flex-layout'
 import {MatCardModule} from '@angular/material/card'
 import {MatButtonModule} from '@angular/material/button';
 import { GithubComponent } from './components/github/github.component'
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,8 @@ import { GithubComponent } from './components/github/github.component'
     MatSelectModule,
     FlexLayoutModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

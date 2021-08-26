@@ -10,9 +10,7 @@ export class SearchBarComponent implements OnInit {
   public gitSearch!: string;
 
   constructor() { }
-  //https://api.github.com/users/thenveensaggam
-  //https://api.github.com/users/thenaveensaggam/repos
-  //"https://api.github.com/user",
+  
   public searchUsername(){}
 
   ngOnInit(): void {
