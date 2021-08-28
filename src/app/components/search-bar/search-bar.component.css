@@ -47,3 +47,6 @@
     border: 2px solid rgb(214, 168, 108);
     background-color: rgb(70, 190, 70);
 }
+.username{
+    padding: 1rem;
+}

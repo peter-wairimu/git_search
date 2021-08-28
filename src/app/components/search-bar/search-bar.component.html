@@ -1,8 +1,9 @@
 <div class="container">
     <form class="form" (submit)="searchUsername()">
         <span class="logo" routerLink="/"><img src="assets/github-brands.svg" alt=""></span>
+        <div class="username">
         <input class="input" [(ngModel)]="gitSearch" name="search-username"  placeholder="search or jump to" >
-        
+        </div>
         <button class="btn"><img src="assets/search-solid.svg" alt="" height="20"></button>
     </form>
 </div>
