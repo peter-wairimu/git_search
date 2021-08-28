@@ -1,9 +1,12 @@
 <div class="container">
+    <mat-card class="mat-elavation-z4">
 <div *ngIf ="github">
+    
+        
     <div class="panel panel-default">
         <div class="panel-heading">
-            <p>{{github.login}}<br>
-                 <small>{{github.id}}</small></p> 
+            <p>Username: {{github.login}}<br>
+                 <small> ID: {{github.id}}</small></p> 
         </div>
         <div class="panel-body">
             <div class="row">
@@ -16,6 +19,7 @@
     </div>
 
 </div>
+</mat-card>
 </div>
 
 
