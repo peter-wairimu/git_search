@@ -8,20 +8,23 @@ import {FormsModule} from '@angular/forms'
 import {HttpClientModule} from '@angular/common/http'
 import{ MatTabsModule} from '@angular/material/tabs'
 import {MatIconModule} from '@angular/material/icon'
-import {MatFormFieldModule} from '@angular/material/form-field'
+import {MatFormFieldModule} from  '@angular/material/form-field'
 import {MatSelectModule} from '@angular/material/select';
 import { SearchBarComponent } from './components/search-bar/search-bar.component'
 import {FlexLayoutModule} from '@angular/flex-layout'
 import {MatCardModule} from '@angular/material/card'
 import {MatButtonModule} from '@angular/material/button';
 import { GithubComponent } from './components/github/github.component'
+import { GithubService } from './service/github.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchBarComponent,
-    GithubComponent
+    GithubComponent,
+   
+
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,7 @@ import { GithubComponent } from './components/github/github.component'
     MatButtonModule,
     
   ],
-  providers: [],
+  providers: [GithubService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

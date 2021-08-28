@@ -1,3 +1,4 @@
+import { GithubService } from './../../service/github.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchBarComponent implements OnInit {
 
-  public gitSearch!: string;
+  github: any;
 
-  constructor() { }
+  constructor(private gitSearch:GithubService ) {
+    this.gitSearch.getSearch().subscribe(github => {
+      console.log(github)
+      this.github=github
+    })
+   }
   
   public searchUsername(){}
 

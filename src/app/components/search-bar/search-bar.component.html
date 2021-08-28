@@ -1,4 +1,43 @@
 <div class="container">
+<div *ngIf ="github">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <p>{{github.login}}<br>
+                 <small>{{github.id}}</small></p> 
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sb-3">
+                    <img src="{{github.avatar_url}}" alt="" height="150">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="container" *ngIf="github">
+
     <form class="form" (submit)="searchUsername()">
         <span class="logo" routerLink="/"><img src="assets/github-brands.svg" alt=""></span>
         <div class="username">
@@ -6,4 +45,4 @@
         </div>
         <button class="btn"><img src="assets/search-solid.svg" alt="" height="20"></button>
     </form>
-</div>
+</div> -->
