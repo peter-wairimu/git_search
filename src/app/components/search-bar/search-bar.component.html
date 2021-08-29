@@ -1,3 +1,7 @@
+<div class="header">
+    <h5>Git user search app</h5>
+</div>
+
 <div class="container">
 <form class="form" (ngSubmit)="findUser()">
     <span class="logo" routerLink="/"><img src="assets/github-brands.svg" alt=""></span>
@@ -8,23 +12,35 @@
 </form>
 
 <div fxLayout ="row wrap" fxLayoutGap="3rem grid">
-    <div fxFlex="40%"brfxFlex.xs fxFlex.xs  *ngIf ="github">
-      <mat-card id="mat" class="mat-elavation-z4">
-        <mat-card-header>
-            <p class="par">Username: {{github.login}}<br>
-                ID: {{github.id}}
-            </p>
+    <div fxFlex="60%"brfxFlex.xs fxFlex.xs  *ngIf ="github">
+      <mat-card id="mat" class="mat-elavation-z4" >
+        <mat-card-header >
+            <p class="par">Username: {{github.login | uppercase}}<br>
+                Created on: {{github.created_at | date}}
+            </p><br>
         </mat-card-header>
         <mat-card-content>
-            
+            <div class="check">
+            <div class="row">
+                <div class="col-sm">
+                    <span class="list-group-item bg-danger">followers: {{github.followers}}</span>
+                </div>
+                <div class="col-sm">
+                <span class="list-group-item bg-primary" >Folowing: {{github.following}}</span>
+                </div>
+                <div class="col-sm">
+                    <span class="list-group-item bg-success">Repositories {{github.public_repos}} </span>
+                </div>
+        
+            </div>
+            </div>
             <div class="col">
-                <img src="{{github.avatar_url}}" alt="" height="150">
+                <img src="{{github.avatar_url}}"  alt="" height="150">
             </div>
-            <div class="list">
-                <li>followers: {{github.followers}}</li>
-                <li>Folowing: {{github.following}} </li> 
-                <li>Repositories {{github.public_repos}} </li>
+            <div class="button">
+            <p><a href="{{github.html_url}}" target="_blank" class="btn btn-primary">View profile</a></p>
             </div>
+    
         </mat-card-content>
         <mat-card-actions>
            

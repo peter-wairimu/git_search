@@ -61,14 +61,54 @@
     border-radius: .6rem;
     box-shadow: 3px 2.4px 3px 3px rgb(77, 201, 159);
     cursor: pointer;
+    
 }
 .col img{
     border-radius: 1.2rem;
-    border: .3rem solid rgb(33, 178, 189);
+    border: .3rem solid rgb(229, 226, 226);
+    outline: none;
+    padding: 4px;
 }
+
 .list{
     font-style: italic;
     color: rgb(10, 99, 69);
     
 }
+.row{
+    padding-bottom: 2rem;
+    padding: 1rem 3rem;
+    color: rgb(10, 95, 67);
+    font-style: italic;
+    
+}
+.button{
+    padding-top: 1rem;  
 
+}
+.button p a{
+    font-size: .7rem;
+    color: rgb(9, 114, 117);
+    font-style: italic;
+}
+.list-group-item{
+    width: 54%;
+    font-size: 12px;
+    height: 3rem;
+    border-radius: .6rem;
+}
+.list-group-item:hover{
+    color: rgb(228, 224, 224);
+    
+}
+.header{
+    font-size: 8px;
+    padding: .6rem 1rem;
+    text-transform: uppercase;
+    color: teal;
+    font-family: 'Oswald', sans-serif;
+    font-style: oblique;
+    
+    
+
+}
