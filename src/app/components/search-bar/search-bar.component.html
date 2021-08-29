@@ -1,16 +1,14 @@
-<div class="container">
+<!-- <div class="container">
     <mat-card class="mat-elavation-z4">
 <div *ngIf ="github">
-    
-        
-    <div class="panel panel-default">
-        <div class="panel-heading">
+    <div class="user">
+        <div class="profile">
             <p>Username: {{github.login}}<br>
-                 <small> ID: {{github.id}}</small></p> 
+                  ID: {{github.id}}</p> 
         </div>
-        <div class="panel-body">
+        <div class="avatar">
             <div class="row">
-                <div class="col-sb-3">
+                <div class="col">
                     <img src="{{github.avatar_url}}" alt="" height="150">
                 </div>
             </div>
@@ -20,9 +18,41 @@
 
 </div>
 </mat-card>
-</div>
+</div> -->
+<form class="form" (submit)="getSearch()">
+    <span class="logo" routerLink="/"><img src="assets/github-brands.svg" alt=""></span>
+    <div class="username">
+    <input class="input" [(ngModel)]="searchUserName" name="searchUsername"  placeholder="search-user"  >
+    </div>
+    <button type="submit" class="btn"><img src="assets/search-solid.svg" alt="" height="20"></button>
+</form>
 
-
+<div fxLayout ="row wrap" fxLayoutGap="3rem grid">
+    <div fxFlex="40%"brfxFlex.xs fxFlex.xs  *ngIf ="github">
+      <mat-card class="mat-elavation-z4">
+        <mat-card-header>
+            
+        </mat-card-header>
+        <mat-card-content>
+            <h1 class="h1">Username: {{github.Username}}<br>
+                ID: {{github.id}}
+              </h1>
+            <div class="col">
+                <img src="{{github.avatar_url}}" alt="" height="150">
+            </div>
+            <div class="list">
+                <li>followers: {{github.followers}}</li>
+                <li>Folowing: {{github.following}} </li> 
+                <li>Repositories {{github.public_repos}} </li>
+            </div>
+        </mat-card-content>
+        <mat-card-actions>
+           
+        </mat-card-actions>
+        </mat-card>
+        
+  </div>
+  
 
 
 
@@ -42,10 +72,10 @@
 <!-- 
 <div class="container" *ngIf="github">
 
-    <form class="form" (submit)="searchUsername()">
+    <form class="form" >
         <span class="logo" routerLink="/"><img src="assets/github-brands.svg" alt=""></span>
         <div class="username">
-        <input class="input" [(ngModel)]="gitSearch" name="search-username"  placeholder="search or jump to" >
+        <input class="input"  name="search-username"  placeholder="search or jump to" >
         </div>
         <button class="btn"><img src="assets/search-solid.svg" alt="" height="20"></button>
     </form>

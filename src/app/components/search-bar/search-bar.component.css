@@ -1,9 +1,9 @@
 .form{
     display: flex;
-    position: fixed;
     align-items: center;
     top: 0;
     left: 0;
+    
 
 }
 .logo{
@@ -50,3 +50,4 @@
 .username{
     padding: 1rem;
 }
+
