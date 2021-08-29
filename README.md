@@ -44,6 +44,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ### (2).Css.
 ### (3).Bootstrap.
 ### (4). Javascript.
+### (5). Typescript
 
 # Support and contact details
 Incase of any queries or any clarification you can contact me via email or phone.
