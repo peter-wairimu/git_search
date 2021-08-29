@@ -56,4 +56,19 @@
     font-size: 400;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+#mat{
+    background-color: rgb(168, 196, 191);
+    border-radius: .6rem;
+    box-shadow: 3px 2.4px 3px 3px rgb(77, 201, 159);
+    cursor: pointer;
+}
+.col img{
+    border-radius: 1.2rem;
+    border: .3rem solid rgb(33, 178, 189);
+}
+.list{
+    font-style: italic;
+    color: rgb(10, 99, 69);
+    
+}
 
