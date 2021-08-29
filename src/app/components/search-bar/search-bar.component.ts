@@ -13,15 +13,16 @@ export class SearchBarComponent implements OnInit {
 
   constructor(private gitSearch:GithubService ) {
     
-    
+    this.gitSearch.getSearch().subscribe(github => {
+      this.github=github
+    })
    }
-  
+   
    
   
-    getSearch(){
+    findUser(){
      this.gitSearch.updateGithub(this.searchUserName)
      this.gitSearch.getSearch().subscribe(github => {
-      console.log(github)
       this.github=github
     })
    }

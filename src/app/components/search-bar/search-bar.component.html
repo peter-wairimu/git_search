@@ -19,7 +19,7 @@
 </div>
 </mat-card>
 </div> -->
-<form class="form" (submit)="getSearch()">
+<form class="form" (ngSubmit)="findUser()">
     <span class="logo" routerLink="/"><img src="assets/github-brands.svg" alt=""></span>
     <div class="username">
     <input class="input" [(ngModel)]="searchUserName" name="searchUsername"  placeholder="search-user"  >
@@ -34,7 +34,7 @@
             
         </mat-card-header>
         <mat-card-content>
-            <h1 class="h1">Username: {{github.Username}}<br>
+            <h1 class="h1">Username: {{github.login}}<br>
                 ID: {{github.id}}
               </h1>
             <div class="col">
