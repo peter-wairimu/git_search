@@ -50,4 +50,10 @@
 .username{
     padding: 1rem;
 }
+.par{
+    color: rgb(10, 99, 69);
+    font-style: italic;
+    font-size: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 

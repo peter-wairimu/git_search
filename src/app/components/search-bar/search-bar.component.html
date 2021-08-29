@@ -1,24 +1,4 @@
-<!-- <div class="container">
-    <mat-card class="mat-elavation-z4">
-<div *ngIf ="github">
-    <div class="user">
-        <div class="profile">
-            <p>Username: {{github.login}}<br>
-                  ID: {{github.id}}</p> 
-        </div>
-        <div class="avatar">
-            <div class="row">
-                <div class="col">
-                    <img src="{{github.avatar_url}}" alt="" height="150">
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-</div>
-</mat-card>
-</div> -->
+<div class="container">
 <form class="form" (ngSubmit)="findUser()">
     <span class="logo" routerLink="/"><img src="assets/github-brands.svg" alt=""></span>
     <div class="username">
@@ -31,12 +11,12 @@
     <div fxFlex="40%"brfxFlex.xs fxFlex.xs  *ngIf ="github">
       <mat-card class="mat-elavation-z4">
         <mat-card-header>
-            
+            <p class="par">Username: {{github.login}}<br>
+                ID: {{github.id}}
+            </p>
         </mat-card-header>
         <mat-card-content>
-            <h1 class="h1">Username: {{github.login}}<br>
-                ID: {{github.id}}
-              </h1>
+            
             <div class="col">
                 <img src="{{github.avatar_url}}" alt="" height="150">
             </div>
@@ -51,6 +31,7 @@
         </mat-card-actions>
         </mat-card>
         
+  </div>
   </div>
   
 
@@ -69,14 +50,4 @@
 
 
 
-<!-- 
-<div class="container" *ngIf="github">
 
-    <form class="form" >
-        <span class="logo" routerLink="/"><img src="assets/github-brands.svg" alt=""></span>
-        <div class="username">
-        <input class="input"  name="search-username"  placeholder="search or jump to" >
-        </div>
-        <button class="btn"><img src="assets/search-solid.svg" alt="" height="20"></button>
-    </form>
-</div> -->
